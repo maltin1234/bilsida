@@ -11,19 +11,33 @@ export default function Home() {
 
       <main className="font-sans">
         {/* Hero Section */}
-        <section className="hero bg-[url('/assets/car1.jpg')] bg-cover bg-center text-white py-20 text-center">
+        <section className="hero bg-black bg-auto bg-cover bg-center text-white py-20 text-center bg-contain ">
           <h1 className="text-4xl font-bold mb-4">Välkommen till Skånes Bilproffs</h1>
           <p className="text-xl mb-6">Din pålitliga partner för alla dina bilreparationsbehov</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Kontakta Oss
-          </button>
+          
         </section>
+        <section className="testimonials bg-center text-center text-white" style={{ width: 'auto', height: '400px' }}>
+  <div className="flex justify-between items-center h-full">
+    <img src="/assets/home.jpg" alt="Bild 1" className="w-1/4 h-full object-cover" />
+    <img src="/assets/car1.jpg" alt="Bild 2" className="w-1/4 h-full object-cover" />
+    <img src="/assets/car2.jpg" alt="Bild 3" className="w-1/4 h-full object-cover" />
+    <img src="/assets/car3.jpg" alt="Bild 4" className="w-1/4 h-full object-cover" />
+  </div>
+</section>
+
 
         {/* Services Section */}
         <section className="services py-20  bg-cover bg-center text-center text-gray-900">
           <h2 className="text-3xl font-bold mb-12">Våra Tjänster</h2>
           <div className="service-list flex flex-wrap justify-center gap-8">
             <div className="service-item bg-white bg-opacity-90 p-6 rounded-lg shadow-lg w-80">
+              <h3 className="text-2xl font-bold mb-2">Oljebyte</h3>
+              <p>Håll din motor igång smidigt med våra oljebytetjänster.</p>
+            </div>
+            <div className="service-item bg-white bg-opacity-90 p-6 rounded-lg shadow-lg w-80">
+              <h3 className="text-2xl font-bold mb-2">Oljebyte</h3>
+              <p>Håll din motor igång smidigt med våra oljebytetjänster.</p>
+            </div><div className="service-item bg-white bg-opacity-90 p-6 rounded-lg shadow-lg w-80">
               <h3 className="text-2xl font-bold mb-2">Oljebyte</h3>
               <p>Håll din motor igång smidigt med våra oljebytetjänster.</p>
             </div>
