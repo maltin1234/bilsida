@@ -42,7 +42,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="hero bg-black bg-auto bg-cover bg-center text-white py-20 text-center bg-contain">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Välkommen till Skånes Bilproffs</h1>
-          <p className="text-xl md:text-2xl mb-6">Din pålitliga partner för alla dina bilreparationsbehov</p>
+          <p className="text-xl md:text-2xl mb-6">Din pålitliga partner för alla dina bilreparationsbehov sen 1995</p>
         </section>
 
         {/* Simplified Slideshow Section */}
@@ -137,9 +137,9 @@ export default function Home() {
       <footer className="bg-black text-white py-8">
         <div className="max-w-screen-lg mx-auto text-center">
           <p className="text-lg font-bold">Skånes Bilproffs</p>
-          <p className="mt-2">Bilvägen 1234, Malmö, Sverige</p>
-          <p className="mt-1">Telefon: +46 123 456 789</p>
-          <p className="mt-1">E-post: info@skanesbilproffs.se</p>
+          <p className="mt-2">Fårbackavägen 88, 212 91, Oxie, Sverige</p>
+          <p className="mt-1">Telefon: +46 760641206</p>
+          <p className="mt-1">E-post: sallahitamer@gmail.com</p>
           <p className="mt-4">&copy; {new Date().getFullYear()} Skånes Bilproffs. Alla rättigheter förbehållna.</p>
         </div>
       </footer>
