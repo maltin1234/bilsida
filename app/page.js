@@ -8,18 +8,21 @@ export default function Home() {
 
   const slides = [
     {
-      src: "/assets/car2.jpg",
+      src: "/assets/home.jpg",
       alt: "Slide 1",
-    },
-    {
-      src: "/assets/car1.jpg",
-      alt: "Slide 2",
+     
     },
     {
       src: "/assets/car3.jpg",
+      alt: "Slide 2",
+     
+    },
+    {
+      src: "/assets/car2.jpg",
       alt: "Slide 3",
      
     },
+
   ];
 
   const nextSlide = () => {
