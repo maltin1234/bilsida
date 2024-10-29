@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const Page = () => {
+export default function Contact() {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
@@ -42,7 +42,7 @@ const Page = () => {
 
   return (
     <main>
-      <section className="testimonials py-12 md:py-20 bg-[url('/assets/challenger.jpg')] bg-cover bg-center text-center text-white">
+      
         <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12">Kontakta Oss</h2>
         <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white bg-opacity-90 p-4 md:p-8 rounded-lg shadow-lg text-black">
           <div className="mb-4">
@@ -88,9 +88,7 @@ const Page = () => {
             {isLoading ? "Skickar..." : "Skicka Meddelande"}
           </button>
         </form>
-      </section>
+     
     </main>
   );
-};
-
-export default Page;
+}
