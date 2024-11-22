@@ -18,9 +18,10 @@ export default function Home() {
         <title>Skånes Bilproffs</title>
         <meta name="description" content="Professionella bilmekanikertjänster" />
         <meta name="description" content="Professionella bilmekanikertjänster sedan 1995, din pålitliga partner för bilreparationer i Oxie." />
-         <meta name="keywords" content="Bilreparation, Bilservice, Skånes Bilproffs, Bilmekaniker, Oxie, Bilverkstad" />
+         <meta name="keywords" content="Bilreparation, Bilservice, Skånes Bilproffs, Bilmekaniker, Oxie, Bilverkstad, Bil, Mekaniker, Verkstad, Fixa, Laga, Skane, bilproffs," />
          <meta name="robots" content="index, follow" />
          <meta name="author" content="Skånes Bilproffs" />
+
          <meta property="og:title" content="Skånes Bilproffs - Bilreparation och Service" />
          <meta property="og:description" content="Erfarna bilmekaniker som erbjuder omfattande bilservice och reparationer." />
           <meta property="og:image" content="/assets/home.jpg" />
@@ -62,17 +63,34 @@ export default function Home() {
             ))}
           </div>
         </section>
-         {/* Showcase Section for Place Images */}
-         <section className="showcase py-12 md:py-20 bg-gray-100 text-center text-gray-900">
-          <h2 className="text-4xl font-bold mb-8 md:mb-12">Upptäck Våra Lokaler</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            {slides.map((slide, index) => (
-              <div key={index} className="w-72 md:w-80 bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src={slide.src} alt={slide.alt} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-        </section>
+      {/* Showcase Section for Place Images */}
+<section className="showcase py-12 md:py-20 bg-gray-100 text-center text-gray-900">
+  <h2 className="text-4xl font-bold mb-8 md:mb-12">Upptäck Våra Lokaler</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+    {slides.map((slide, index) => (
+      <div
+        key={index}
+        className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+      >
+        {/* Moderate-Sized Image */}
+        <div className="relative w-full h-48 md:h-56">
+          <img
+            src={slide.src}
+            alt={slide.alt}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Text Background */}
+        <div className="p-4 bg-gray-900 text-white text-base">
+          <p className="font-bold">Motor reparation</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
+
 
         {/* Contact Form Section */}
         <section id="contact" className="contact py-12 md:py-20 bg-[url('/assets/challenger.jpg')] bg-cover bg-center text-center text-white">
